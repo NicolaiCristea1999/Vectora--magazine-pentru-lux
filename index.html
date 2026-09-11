@@ -1,0 +1,668 @@
+```html
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Vectora.md — Parfumuri de lux</title>
+    <link rel="icon" href="images/Vectora.jpg?v=3" type="image/jpeg">
+    <link rel="shortcut icon" href="images/Vectora.jpg?v=3" type="image/jpeg">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+
+<body>
+
+    <div class="vectora-gate" id="vectoraGate" aria-live="polite">
+        <div class="gate-stars" aria-hidden="true"></div>
+        <div class="gate-orbit gate-orbit-one" aria-hidden="true"></div>
+        <div class="gate-orbit gate-orbit-two" aria-hidden="true"></div>
+        <div class="gate-content">
+            <div class="gate-mark">
+                <img src="images/Vectora.jpg" alt="Vectora">
+                <span>V</span>
+            </div>
+            <p class="gate-kicker">VECTORA / PRIVATE ACCESS</p>
+            <h1>Intră în lumea<br><span>Vectora</span></h1>
+            <p class="gate-copy">Pregătim o experiență parfumată, creată pentru tine.</p>
+            <div class="turnstile-wrap">
+                <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-callback="vectoraVerified"></div>
+            </div>
+            <div class="gate-status" id="gateStatus">
+                <span class="status-dot"></span>
+                Verificare de securitate în curs
+            </div>
+        </div>
+        <div class="gate-footer">
+            <span>EST. 2026</span>
+            <span>PARFUMURI DE LUX</span>
+            <span>MD / 47.02°N</span>
+        </div>
+    </div>
+
+    <!-- =========================
+     NAVIGATION
+========================= -->
+
+    <nav>
+
+        <a class="logo" href="#home" aria-label="Revino la începutul paginii Vectora">
+            <img src="images/Vectora.jpg" alt="Vectora"> Vectora
+        </a>
+
+        <ul>
+            <li><a href="#shop">Magazin</a></li>
+            <li><a href="#about">Despre noi</a></li>
+        </ul>
+
+        <button class="cart" id="cartButton" type="button" aria-label="Deschide coșul de cumpărături">
+            🛒 Coș <span id="cartCount">0</span>
+        </button>
+
+    </nav>
+
+
+    <!-- =========================
+     HERO
+========================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <img class="hero-profile" src="images/Vectora.jpg" alt="Vectora">
+
+            <div class="badge">
+                COLECȚIE DE PARFUMURI DE LUX
+            </div>
+
+            <h1>Vectora</h1>
+
+            <p>
+                Descoperă parfumuri memorabile create
+                pentru cei care vor să lase o impresie de durată.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#shop" class="btn btn-gold">
+                    Explorează colecția
+                </a>
+
+                <a href="#about" class="btn btn-outline">
+                    Descoperă mai mult
+                </a>
+
+            </div>
+
+            <div class="hero-offer" aria-label="Oferta specială Stronger with You și Velvet Rose">
+                <span class="hero-offer-tag">OFERTĂ FLASH</span>
+                <div class="hero-offer-copy">
+                    <strong>Stronger with You + Velvet Rose</strong>
+                    <span>Două arome. Un singur moment memorabil.</span>
+                </div>
+                <div class="hero-offer-price"><del>900 lei</del><b>400 lei</b></div>
+                <a class="hero-offer-link" href="#shop">Vezi oferta <span>→</span></a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+     SHOP
+========================= -->
+
+    <section id="shop">
+
+        <div class="section-title">
+
+            <span>COLECȚIA NOASTRĂ</span>
+
+            <h2>Parfumuri deosebite</h2>
+
+        </div>
+
+        <div class="collection-filters" aria-label="Categorii de parfumuri">
+            <button class="filter-button active" type="button" data-filter="all">Toate parfumurile</button>
+            <button class="filter-button" type="button" data-filter="boys">Pentru bărbați</button>
+            <button class="filter-button" type="button" data-filter="girls">Pentru femei</button>
+        </div>
+
+        <div class="shop-currency-row">
+            <label for="shopCurrency">Afișează prețurile în:</label>
+            <select class="currency-select shop-currency" id="shopCurrency">
+                <option value="MDL">MDL - lei moldovenești</option>
+                <option value="EUR">EUR - euro</option>
+            </select>
+        </div>
+
+
+        <div class="shop">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product" data-type="girls">
+
+                <div class="image-box">
+
+                        <img src="images/golden_essence.png" alt="Golden Essence">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Golden Essence</h3>
+
+                    <p class="category">
+                        Apă de parfum • 50 ml
+                    </p>
+
+                    <div class="price">
+                        690 MDL
+                    </div>
+
+                    <button class="buy" data-name="Golden Essence" data-category="Apă de parfum • 50 ml"
+                        data-price="690">
+                        Adaugă în coș
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product" data-type="boys">
+
+                <div class="image-box">
+
+                        <img src="images/midnight_noir.png" alt="Midnight Noir">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Midnight Noir</h3>
+
+                    <p class="category">
+                        Apă de parfum • 50 ml
+                    </p>
+
+                    <div class="price">
+                        790 MDL
+                    </div>
+
+                    <button class="buy" data-name="Midnight Noir" data-category="Apă de parfum • 50 ml"
+                        data-price="790">
+                        Adaugă în coș
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product" data-type="boys">
+
+                <div class="image-box">
+
+                        <img src="images/royal_oud.png" alt="Royal Oud">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Royal Oud</h3>
+
+                    <p class="category">
+                        Apă de parfum • 100 ml
+                    </p>
+
+                    <div class="price">
+                        850 MDL
+                    </div>
+
+                    <button class="buy" data-name="Royal Oud" data-category="Apă de parfum • 100 ml" data-price="850">
+                        Adaugă în coș
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product" data-type="girls">
+
+                <div class="image-box">
+
+                        <img src="images/velvet_rose.png" alt="Velvet Rose">
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Velvet Rose</h3>
+
+                    <p class="category">
+                        Apă de parfum • 50 ml
+                    </p>
+
+                    <div class="price">
+                        740 MDL
+                    </div>
+
+                    <button class="buy" data-name="Velvet Rose" data-category="Apă de parfum • 50 ml" data-price="740">
+                        Adaugă în coș
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="product" data-type="girls">
+                <div class="image-box"><img src="images/golden_essence.png" alt="Golden Essence"></div>
+                <div class="product-info"><h3>Golden Essence</h3><p class="category">Apă de parfum • 50 ml</p><div class="price">720 MDL</div><button class="buy" data-name="Golden Essence" data-category="Apă de parfum • 50 ml" data-price="720">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="boys">
+                <div class="image-box"><img src="images/midnight_noir.png" alt="Black Night"></div>
+                <div class="product-info"><h3>Black Midnight Noir</h3><p class="category">Apă de parfum • 50 ml</p><div class="price">680 MDL</div><button class="buy" data-name="Black Midnight" data-category="Apă de parfum • 50 ml" data-price="680">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="boys">
+                <div class="image-box"><img src="images/oud_intense.png" alt="Oud Intense"></div>
+                <div class="product-info"><h3>Oud Intense</h3><p class="category">Apă de parfum • 100 ml</p><div class="price">900 MDL</div><button class="buy" data-name="Oud Intense" data-category="Apă de parfum • 100 ml" data-price="900">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="girls">
+                <div class="image-box"><img src="images/Velvet_Aura.png" alt="Velvet Aura"></div>
+                <div class="product-info"><h3>Velvet Aura</h3><p class="category">Apă de parfum • 50 ml</p><div class="price">860 MDL</div><button class="buy" data-name="Velvet Aura" data-category="Apă de parfum • 50 ml" data-price="860">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="boys">
+                <div class="image-box"><img src="images/Stronger_with_you.png" alt="Stronger with You"></div>
+                <div class="product-info"><h3>Stronger with You</h3><p class="category">Apă de parfum • 75 ml</p><div class="price">640 MDL</div><button class="buy" data-name="Stronger with You" data-category="Apă de parfum • 75 ml" data-price="640">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="boys">
+                <div class="image-box"><img src="images/Scandal.png" alt="Scandal"></div>
+                <div class="product-info"><h3>Scandal</h3><p class="category">Apă de parfum • 75 ml</p><div class="price">780 MDL</div><button class="buy" data-name="Scandal" data-category="Apă de parfum • 75 ml" data-price="780">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="boys">
+                <div class="image-box"><img src="images/The_Black_Knight.png" alt="The Black Knight"></div>
+                <div class="product-info"><h3>The Black Knight</h3><p class="category">Apă de parfum • 100 ml</p><div class="price">900 MDL</div><button class="buy" data-name="The Black Knight" data-category="Apă de parfum • 100 ml" data-price="900">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="boys">
+                <div class="image-box"><img src="images/Oud_Prestige.png" alt="Oud Prestige"></div>
+                <div class="product-info"><h3>Oud Prestige</h3><p class="category">Apă de parfum • 50 ml</p><div class="price">820 MDL</div><button class="buy" data-name="Oud Prestige" data-category="Apă de parfum • 50 ml" data-price="820">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="girls">
+                <div class="image-box"><img src="images/Amber_kiss.png" alt="Amber Kiss"></div>
+                <div class="product-info"><h3>Amber Kiss</h3><p class="category">Apă de parfum • 50 ml</p><div class="price">750 MDL</div><button class="buy" data-name="Amber Kiss" data-category="Apă de parfum • 50 ml" data-price="750">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="boys">
+                <div class="image-box"><img src="images/midnight_noir.png" alt="Midnight Storm"></div>
+                <div class="product-info"><h3>Midnight Storm</h3><p class="category">Apă de parfum • 50 ml</p><div class="price">890 MDL</div><button class="buy" data-name="Midnight Storm" data-category="Apă de parfum • 50 ml" data-price="890">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="boys">
+                <div class="image-box"><img src="images/royal_oud.png" alt="Oud Reserve"></div>
+                <div class="product-info"><h3>Oud Reserve</h3><p class="category">Apă de parfum • 100 ml</p><div class="price">900 MDL</div><button class="buy" data-name="Oud Reserve" data-category="Apă de parfum • 100 ml" data-price="900">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="girls">
+                <div class="image-box"><img src="images/velvet_rose.png" alt="Rose Elegance"></div>
+                <div class="product-info"><h3>Rose Elegance</h3><p class="category">Apă de parfum • 75 ml</p><div class="price">840 MDL</div><button class="buy" data-name="Rose Elegance" data-category="Apă de parfum • 75 ml" data-price="840">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="girls">
+                <div class="image-box"><img src="images/golden_essence.png" alt="Sunlit Essence"></div>
+                <div class="product-info"><h3>Sunlit Essence</h3><p class="category">Apă de parfum • 50 ml</p><div class="price">690 MDL</div><button class="buy" data-name="Sunlit Essence" data-category="Apă de parfum • 50 ml" data-price="690">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="boys">
+                <div class="image-box"><img src="images/midnight_noir.png" alt="Noir Shadow"></div>
+                <div class="product-info"><h3>Noir Shadow</h3><p class="category">Apă de parfum • 75 ml</p><div class="price">880 MDL</div><button class="buy" data-name="Noir Shadow" data-category="Apă de parfum • 75 ml" data-price="880">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="boys">
+                <div class="image-box"><img src="images/royal_oud.png" alt="Oud Prestige"></div>
+                <div class="product-info"><h3>Oud Prestige</h3><p class="category">Apă de parfum • 100 ml</p><div class="price">900 MDL</div><button class="buy" data-name="Oud Prestige" data-category="Apă de parfum • 100 ml" data-price="900">Adaugă în coș</button></div>
+            </div>
+            <div class="product" data-type="girls">
+                <div class="image-box"><img src="images/Rose_elegance.png" alt="Rose Elegance"></div>
+                <div class="product-info"><h3>Rose Elegance</h3><p class="category">Apă de parfum • 50 ml</p><div class="price">770 MDL</div><button class="buy" data-name="Rose Elegance" data-category="Apă de parfum • 50 ml" data-price="770">Adaugă în coș</button></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+     RECENZII
+========================= -->
+
+    <section class="reviews" id="reviews">
+
+        <div class="section-title">
+            <span>PĂRERILE CLIENȚILOR</span>
+            <h2>De ce le place Magazinul Vectora</h2>
+        </div>
+
+        <div class="review-grid">
+            <article class="review-card" data-review-id="review-1">
+                <div class="stars" aria-label="5 stele">★★★★★</div>
+                <img class="reviewer-profile" src="https://i.pravatar.cc/100?img=47" alt="Profilul Andreei M.">
+                <p>„Îmi place Magazinul Vectora pentru parfumurile de calitate și aromele care rezistă mult timp.”</p>
+                <strong>Andreea M.</strong>
+                <div class="store-reply">
+                    <img src="images/Vectora.jpg" alt="Profilul Vectora">
+                    <div>
+                        <strong>Vectora</strong>
+                        <p>Vă mulțumim că v-a plăcut magazinul nostru! Ne bucurăm că apreciați calitatea parfumurilor.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="review-card" data-review-id="review-2">
+                <div class="stars" aria-label="5 stele">★★★★★</div>
+                <img class="reviewer-profile" src="https://i.pravatar.cc/100?img=12" alt="Profilul lui Victor C.">
+                <p>„Aleg Vectora pentru livrarea rapidă și pentru că produsele ajung mereu ambalate foarte frumos.”</p>
+                <strong>Victor C.</strong>
+                <div class="store-reply">
+                    <img src="images/Vectora.jpg" alt="Profilul Vectora">
+                    <div>
+                        <strong>Vectora</strong>
+                        <p>Vă mulțumim pentru apreciere! Punem grijă în fiecare comandă pentru ca experiența dumneavoastră să fie una plăcută.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="review-card" data-review-id="review-3">
+                <div class="stars" aria-label="5 stele">★★★★★</div>
+                <img class="reviewer-profile" src="https://i.pravatar.cc/100?img=33" alt="Profilul lui Daniel P.">
+                <p>„Vectora are un magazin elegant, prețuri bune și o experiență simplă de la alegere până la comandă.”</p>
+                <strong>Daniel P.</strong>
+                <div class="store-reply">
+                    <img src="images/Vectora.jpg" alt="Profilul Vectora">
+                    <div>
+                        <strong>Vectora</strong>
+                        <p>Vă mulțumim frumos pentru cuvintele dumneavoastră! Ne onorează să vă oferim o experiență elegantă și simplă.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="review-card" data-review-id="review-4">
+                <div class="stars" aria-label="5 stele">★★★★★</div>
+                <img class="reviewer-profile" src="https://i.pravatar.cc/100?img=44" alt="Profilul Elenei R.">
+                <p>„Îmi place varietatea de parfumuri pentru bărbați și femei. Găsesc ușor un cadou potrivit.”</p>
+                <strong>Elena R.</strong>
+                <div class="store-reply">
+                    <img src="images/Vectora.jpg" alt="Profilul Vectora">
+                    <div>
+                        <strong>Vectora</strong>
+                        <p>Vă mulțumim că ați ales magazinul nostru! Ne bucurăm că găsiți la Vectora parfumul potrivit pentru fiecare ocazie.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="new-review-area">
+            <h3>Lasă și tu un comentariu</h3>
+            <p>Spune-ne de ce îți place Magazinul Vectora.</p>
+            <form class="review-form" id="reviewForm">
+                <input id="reviewName" type="text" placeholder="Numele tău" maxlength="40" required>
+                <select id="reviewRating" aria-label="Alege numărul de stele" required>
+                    <option value="5">★★★★★ - 5 stele</option>
+                    <option value="4">★★★★☆ - 4 stele</option>
+                    <option value="3">★★★☆☆ - 3 stele</option>
+                    <option value="2">★★☆☆☆ - 2 stele</option>
+                    <option value="1">★☆☆☆☆ - 1 stea</option>
+                </select>
+                <textarea id="reviewText" placeholder="Scrie comentariul tău..." maxlength="240" required></textarea>
+                <p class="review-form-error" id="reviewFormError" role="alert"></p>
+                <button class="btn btn-gold" type="submit">Publică comentariul</button>
+            </form>
+            <div class="review-grid saved-reviews" id="savedReviews"></div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+     FEATURES
+========================= -->
+
+    <section id="about">
+
+        <div class="section-title">
+
+            <span>EXPERIENȚA Vectora</span>
+
+            <h2>De ce să ne alegi?</h2>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">✨</div>
+
+                <h3>Calitate premium</h3>
+
+                <p>
+                    Parfumuri atent selecționate,
+                    de o calitate excepțională.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🚚</div>
+
+                <h3>Livrare rapidă</h3>
+
+                <p>
+                    Livrare rapidă și sigură
+                    în toată Moldova.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🖤</div>
+
+                <h3>Stil elegant</h3>
+
+                <p>
+                    Parfumuri elegante create
+                    pentru a impresiona.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">💎</div>
+
+                <h3>Colecție exclusivă</h3>
+
+                <p>
+                    Descoperă arome unice
+                    pe care nu le vei uita.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+     NEWSLETTER
+========================= -->
+
+    <section>
+
+        <div class="newsletter">
+
+            <h2>Alătură-te Vectora</h2>
+
+            <p>
+                Primește noutăți despre parfumuri,
+                oferte speciale și lansări exclusive.
+            </p>
+
+            <div class="email-box">
+
+                <input type="email" placeholder="Introdu adresa de email">
+
+                <button class="btn btn-gold">
+                    Abonează-te
+                </button>
+
+            </div>
+
+            <div class="social-section">
+                <p>Alătură-te nouă și pe rețelele sociale pentru noutăți, inspirație și oferte speciale.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/vetora_.cahul/" target="_blank" rel="noopener noreferrer" aria-label="Urmărește Vectora pe Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@vectora.cahul" target="_blank" rel="noopener noreferrer" aria-label="Urmărește Vectora pe TikTok">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                        <span>TikTok</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+     FOOTER
+========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 <strong>Vectora</strong> — Parfumuri de lux
+        </p>
+
+        <p>
+            Creat cu ✨ în Moldova
+        </p>
+
+    </footer>
+
+
+    <!-- CART MESSAGE -->
+
+    <div class="cart-message" id="cartMessage">
+        Adăugat în coș ✨
+    </div>
+
+    <button class="assistant-launcher" id="assistantLauncher" type="button" aria-label="Deschide asistentul Vectora" aria-expanded="false">
+        <span class="assistant-launcher-orbit" aria-hidden="true"></span>
+        <span class="assistant-launcher-core" aria-hidden="true">✦</span>
+        <span class="assistant-launcher-label">Vectora AI</span>
+    </button>
+
+    <aside class="assistant-panel" id="assistantPanel" aria-hidden="true">
+        <div class="assistant-header">
+            <div class="assistant-identity">
+                <div class="assistant-avatar">✦</div>
+                <div>
+                    <p class="assistant-eyebrow">VECTORA INTELLIGENCE</p>
+                    <h2>Atelierul tău de arome</h2>
+                </div>
+            </div>
+            <div class="assistant-header-actions">
+                <button class="assistant-new-chat" id="assistantNewChat" type="button" aria-label="Pornește o conversație nouă">＋</button>
+                <button class="assistant-close" id="assistantClose" type="button" aria-label="Închide asistentul">×</button>
+            </div>
+        </div>
+        <div class="assistant-signal"><span></span> Online • gata să creeze o recomandare</div>
+        <div class="assistant-messages" id="assistantMessages" aria-live="polite">
+            <article class="assistant-message assistant-message-ai">
+                <span class="assistant-message-label">VECTOR</span>
+                <p>Salut. Spune-mi ce vrei să transmiți astăzi și îți găsesc aroma potrivită, fără răspunsuri generice.</p>
+            </article>
+        </div>
+        <div class="assistant-prompts" id="assistantPrompts">
+            <button type="button" data-prompt="Vreau ceva elegant pentru seară">Seară elegantă</button>
+            <button type="button" data-prompt="Caut un cadou sub 1700 MDL">Cadou sub 1700 MDL</button>
+            <button type="button" data-prompt="Fă-mi un quiz rapid">Quiz rapid</button>
+        </div>
+        <form class="assistant-composer" id="assistantForm">
+            <input id="assistantInput" type="text" maxlength="180" autocomplete="off" placeholder="Descrie vibe-ul tău..." aria-label="Scrie un mesaj pentru Vectora AI">
+            <button type="submit" aria-label="Trimite mesajul">↗</button>
+        </form>
+        <p class="assistant-note">Răspunsuri instant • recomandări din colecția Vectora</p>
+    </aside>
+
+    <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+        <div class="cart-panel-header">
+            <h2>Coșul tău</h2>
+            <button class="close-button" id="closeCart" type="button" aria-label="Închide coșul de cumpărături">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Coșul tău este gol.</p>
+        </div>
+        <label class="currency-label" for="currencySelect">Monedă</label>
+        <select class="currency-select" id="currencySelect">
+            <option value="MDL">MDL - lei moldovenești</option>
+            <option value="EUR">EUR - euro</option>
+        </select>
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">0 MDL</strong>
+        </div>
+        <button class="btn btn-gold checkout-button" id="checkoutButton" type="button" disabled>Cumpără acum</button>
+    </aside>
+
+    <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+        <form class="checkout-modal" id="checkoutForm">
+            <button class="close-button" id="closeCheckout" type="button" aria-label="Închide comanda">×</button>
+            <span class="modal-kicker">FINALIZEAZĂ COMANDA</span>
+            <h2>Este aproape al tău.</h2>
+            <p>Introdu datele de contact și vom pregăti comanda ta de parfum.</p>
+            <div class="order-summary">
+                <h3>Produsele cumpărate</h3>
+                <div id="orderSummaryItems"></div>
+                <strong id="orderSummaryTotal"></strong>
+            </div>
+            <label for="phone">Număr de telefon</label>
+            <input id="phone" name="phone" type="tel" placeholder="+373 600 00 000" required>
+            <label for="checkoutEmail">Adresă de email</label>
+            <input id="checkoutEmail" name="email" type="email" placeholder="you@example.com" required>
+            <p class="form-error" id="formError" role="alert"></p>
+            <button class="btn btn-gold" type="submit">Confirmă achiziția</button>
+        </form>
+    </div>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="js/js.js"></script>
+
+    <!-- =========================
+     JAVASCRIPT
+========================= -->
+
+
+
+</body>
+
+</html>
+```
